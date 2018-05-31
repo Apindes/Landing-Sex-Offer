@@ -1,0 +1,140 @@
+.hiding {
+  overflow-y: hidden; }
+.modal-window .module{
+    margin-top: 10%;
+}
+.modal-window {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  background-color: cream;
+  z-index: 30; }
+  .modal-window:not(.active) {
+    left: -200%; }
+  .modal-window.active {
+    left: 0%; 
+    height: 100%;
+    width: 100%;
+      background-color: rgba(32, 11, 53, 0.52);}
+  
+  .modal-window p {
+    font-weight: 700;
+    color: inherit;
+    text-align: center; }
+  .modal-window form{
+    box-shadow: 1px 2px 116px grey;
+  }
+    .modal-window p span {
+      display: block; }
+  .modal-window .modal-window-caller {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    z-index: 5; }
+    .modal-window .modal-window-caller svg {
+      width: 65%;
+      -webkit-transition: fill 0.2s ease-in;
+      -khtml-transition: fill 0.2s ease-in;
+      -moz-transition: fill 0.2s ease-in;
+      -ms-transition: fill 0.2s ease-in;
+      -o-transition: fill 0.2s ease-in;
+      transition: fill 0.2s ease-in; }
+      .modal-window .modal-window-caller svg:hover {
+        fill: darkred;
+        cursor: pointer; }
+  .modal-window form {
+    max-width: 360px;
+    position: relative;
+    background-color: white; }
+    .modal-window form .form-row {
+      position: relative; }
+      .modal-window form .form-row:not(:last-of-type) {
+        margin-bottom: 20px; }
+      .modal-window form .form-row:last-of-type {
+        margin-bottom: 30px; }
+      .modal-window form .form-row label {
+        display: inline-block;
+        color: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0px auto 5px; }
+      .modal-window form .form-row input {
+        width: 100%;
+        height: 48px;
+        padding: 0px 15px 0px 40px;
+        border: 1px solid cream;
+        border-radius: 4px;
+        background-color: #f7f7f7;
+        background-position: 10px 50%;
+        background-repeat: no-repeat; }
+    .modal-window form .request-caller {
+      display: block;
+      max-width: 220px;
+      height: 48px;
+      background-color:#fa2b56;
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
+      border: none;
+      width: 100%;
+      text-transform: uppercase;
+      border-radius: 48px;
+      -webkit-transition: all, 0.2s, ease-in;
+      -khtml-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -ms-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in;
+      transition: background-color 0.2s ease-in; }
+      .modal-window form .request-caller:hover {
+        background-color: #d22549;
+        cursor: pointer;
+        -webkit-animation: buttonPulsation 1s;
+        -khtml-animation: buttonPulsation 1s;
+        -moz-animation: buttonPulsation 1s;
+        -ms-animation: buttonPulsation 1s;
+        -o-animation: buttonPulsation 1s;
+        animation: buttonPulsation 1s; }
+
+@media screen and (max-device-width: 720px) {
+  .modal-window-caller {
+    top: 15px;
+    right: 25px; }
+
+  .modal-window {
+    -webkit-transition: left 0.2s ease-in;
+    -khtml-transition: left 0.2s ease-in;
+    -moz-transition: left 0.2s ease-in;
+    -ms-transition: left 0.2s ease-in;
+    -o-transition: left 0.2s ease-in;
+    transition: left 0.2s ease-in; }
+    .modal-window form {
+        height: 90vh;
+        overflow: scroll;
+        padding: 10px 20px; }
+      .modal-window form p {
+        margin: 30px auto 20px;
+        font-size: 20px; }
+      .modal-window form .request-caller {
+        margin: 0px auto 40px; } }
+@media screen and (min-device-width: 721px) {
+  .modal-window-caller {
+    top: 20px;
+    right: 30px; }
+
+  .modal-window {
+    -webkit-transition: left 0.4s ease-in;
+    -khtml-transition: left 0.4s ease-in;
+    -moz-transition: left 0.4s ease-in;
+    -ms-transition: left 0.4s ease-in;
+    -o-transition: left 0.4s ease-in;
+    transition: left 0.4s ease-in; }
+    .modal-window form {
+      padding: 40px; }
+      .modal-window form p {
+        margin: 0px auto 20px;
+        font-size: 24px; }
+      .modal-window form .request-caller {
+        margin: 0px auto; } }
+
+/*# sourceMappingURL=modal-window.css.map */
